@@ -1,0 +1,7 @@
+C:\Users\josh1\Documents\! Semester 6\.NET\Lab3\lab3\lab3\obj\Release\net10.0\PubTmp\Out\lab3.exe
+C:\Users\josh1\Documents\! Semester 6\.NET\Lab3\lab3\lab3\obj\Release\net10.0\PubTmp\Out\appsettings.Development.json
+C:\Users\josh1\Documents\! Semester 6\.NET\Lab3\lab3\lab3\obj\Release\net10.0\PubTmp\Out\appsettings.json
+C:\Users\josh1\Documents\! Semester 6\.NET\Lab3\lab3\lab3\obj\Release\net10.0\PubTmp\Out\lab3.dll
+C:\Users\josh1\Documents\! Semester 6\.NET\Lab3\lab3\lab3\obj\Release\net10.0\PubTmp\Out\lab3.deps.json
+C:\Users\josh1\Documents\! Semester 6\.NET\Lab3\lab3\lab3\obj\Release\net10.0\PubTmp\Out\lab3.runtimeconfig.json
+C:\Users\josh1\Documents\! Semester 6\.NET\Lab3\lab3\lab3\obj\Release\net10.0\PubTmp\Out\lab3.pdb

@@ -1,0 +1,16 @@
+﻿@model Rsvp
+
+@{
+    ViewData["Title"] = "Confirmed";
+}
+
+<h1>Registration Confirmed</h1>
+<p class="alert alert-success">@ViewData["Message"]</p>
+
+<ul>
+    <li><strong>Workshop:</strong> @Model.workshopTitle</li>
+    <li><strong>Needs Accommodation:</strong> @Model.needsAccommodation</li>
+</ul>
+
+<a asp-action="Registrations" class="btn btn-secondary">View All Registrations</a>
+<a asp-action="Index" class="btn btn-outline-primary">Back to Workshops</a>

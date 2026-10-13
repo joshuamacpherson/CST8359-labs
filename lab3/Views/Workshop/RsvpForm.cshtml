@@ -1,0 +1,33 @@
+﻿@model Rsvp
+
+@{
+    ViewData["Title"] = "RSVP";
+}
+
+<h1>RSVP for a Workshop</h1>
+
+<form asp-action="Confirm" method="post">
+    <div class="mb-3">
+        <label asp-for="fullName" class="form-label"></label>
+        <input asp-for="fullName" class="form-control" />
+        <span asp-validation-for="fullName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="workshopTitle" class="form-label"></label>
+        <select asp-for="workshopTitle" class="form-control">
+            <option value="">-- Select a Workshop --</option>
+            <option value="ASP.NET for Experts">ASP.NET for Experts</option>
+            <option value="Blazor Intro">Blazor Intro</option>
+            <option value="Razor Essentials">Razor Essentials</option>
+        </select>
+        <span asp-validation-for="workshopTitle" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-check">
+        <input asp-for="needsAccommodation" class="form-check-input" />
+        <label asp-for="needsAccommodation" class="form-check-label"></label>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>

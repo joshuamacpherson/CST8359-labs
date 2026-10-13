@@ -1,0 +1,29 @@
+﻿@model List<Rsvp>
+
+@{
+    ViewData["Title"] = "Registrations";
+}
+
+<h1>All Registrations</h1>
+
+<a asp-action="RsvpForm" class="btn btn-primary mb-3">Add Registration</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Workshop</th>
+            <th>Needs Accommodation</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.fullName</td>
+                <td>@r.workshopTitle</td>
+                <td>@(r.needsAccommodation ? "Yes" : "No")</td>
+            </tr>
+        }
+    </tbody>
+</table>
