@@ -8,8 +8,8 @@ namespace lab3.Controllers
 
         private static List<Rsvp> _registrations = new List<Rsvp>
     {
-        new Rsvp { fullName = "Alice Smith", workshopTitle = "Routing Basics", needsAccommodation = false },
-        new Rsvp { fullName = "Bob Jones", workshopTitle = "EF Core Intro", needsAccommodation = true },
+        new Rsvp { fullName = "Laughing", workshopTitle = "ASP.NET for Experts", needsAccommodation = false },
+        new Rsvp { fullName = "Jeffery", workshopTitle = "Blazor Intro", needsAccommodation = true },
     };
         public IActionResult Index()
         {
