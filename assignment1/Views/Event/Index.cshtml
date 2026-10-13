@@ -1,0 +1,36 @@
+﻿@model List<WebApplication1.Models.Event>
+
+@{
+    ViewData["Title"] = "Event Manager";
+}
+
+<h1>Event Manager</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ev in Model)
+        {
+            <tr>
+                <td>@ev.Title</td>
+                <td>@ev.Date.ToShortDateString()</td>
+                <td>@ev.Location</td>
+                <td>
+                    <a asp-controller="Event"
+                       asp-action="ManageAttendees"
+                       asp-route-id="@ev.Id"
+                       class="btn btn-primary">
+                        Manage Attendees
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
